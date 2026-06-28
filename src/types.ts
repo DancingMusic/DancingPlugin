@@ -116,6 +116,33 @@ export interface DanceRhythmFrame {
   energy: number;
 }
 
+export interface DancePluginSettingOption {
+  label: string;
+  value: string;
+}
+
+export interface DancePluginSettingSection {
+  id: string;
+  label: string;
+  description?: string;
+  order?: number;
+  defaultOpen?: boolean;
+}
+
+export interface DancePluginSettingDefinition {
+  type: 'number' | 'boolean' | 'color' | 'select';
+  label: string;
+  default: any;
+  min?: number;
+  max?: number;
+  step?: number;
+  options?: Array<string | DancePluginSettingOption>;
+  section?: string;
+  order?: number;
+  help?: string;
+  disabled?: boolean;
+}
+
 /**
  * Static metadata and configurable settings for a Dance plugin.
  */
@@ -155,16 +182,12 @@ export interface DancePluginConfig {
     context?: '2d' | 'webgl';
   };
 
+  /** Optional grouping metadata for user-configurable parameters. */
+  settingSections?: DancePluginSettingSection[];
+
   /** User-configurable parameters */
   settings?: {
-    [key: string]: {
-      type: 'number' | 'boolean' | 'color' | 'select';
-      label: string;
-      default: any;
-      min?: number;
-      max?: number;
-      options?: string[];
-    };
+    [key: string]: DancePluginSettingDefinition;
   };
 
   // Fields set by the loader — plugin authors do not need to provide these.

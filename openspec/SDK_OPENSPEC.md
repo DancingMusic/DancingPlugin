@@ -45,6 +45,39 @@ interface DancePluginConfig {
 }
 ```
 
+### DancePluginConfig.settings
+
+插件设置由 SDK schema 描述，宿主负责渲染设置面板。设置项支持分组、排序、说明、禁用态和带 label 的 select 选项；插件不得自行注入宿主 DOM 控制面板。
+
+```typescript
+interface DancePluginSettingSection {
+  id: string;
+  label: string;
+  description?: string;
+  order?: number;
+  defaultOpen?: boolean;
+}
+
+interface DancePluginSettingDefinition {
+  type: 'number' | 'boolean' | 'color' | 'select';
+  label: string;
+  default: any;
+  min?: number;
+  max?: number;
+  step?: number;
+  options?: Array<string | { label: string; value: string }>;
+  section?: string;
+  order?: number;
+  help?: string;
+  disabled?: boolean;
+}
+
+interface DancePluginConfig {
+  settingSections?: DancePluginSettingSection[];
+  settings?: Record<string, DancePluginSettingDefinition>;
+}
+```
+
 ### AudioData
 
 ```typescript
