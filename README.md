@@ -69,7 +69,7 @@ export default new MyPlugin();
 | `bpm` | `number` | Estimated BPM |
 | `bassChange` | `number` | Bass change since last frame (-1–1) |
 | `volumeChange` | `number` | Volume change since last frame (-1–1) |
-| `rhythm` | `DanceRhythmFrame` | Unified beat, band, onset, and pulse protocol |
+| `rhythm` | `DanceRhythmFrame` | Unified beat, band, onset, section, and pulse protocol |
 
 ## Building Your Plugin for Distribution
 

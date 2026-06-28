@@ -19,6 +19,15 @@ export function createEmptyRhythmFrame(): DanceRhythmFrame {
       energy: 0,
       score: 0,
     },
+    section: {
+      energy: 0,
+      low: 0,
+      lift: 0,
+      dynamics: 0,
+      density: 0,
+      climax: 0,
+      bloom: 0,
+    },
     beat: {
       hit: false,
       time: 0,

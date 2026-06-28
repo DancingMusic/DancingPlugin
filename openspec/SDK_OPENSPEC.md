@@ -66,7 +66,9 @@ interface AudioData {
 
 ### DanceRhythmFrame
 
-`DanceRhythmFrame` 是唯一标准节奏协议。宿主负责分析音频并输出 `bands`、`onset`、`beat`、`pulse`、`bass/mid/treble/energy`；插件不得自行挂载 analyser 或实现私有节拍检测。
+`DanceRhythmFrame` 是唯一标准节奏协议。宿主负责分析音频并输出 `bands`、`onset`、`section`、`beat`、`pulse`、`bass/mid/treble/energy`；插件不得自行挂载 analyser 或实现私有节拍检测。
+
+- `section.energy/low/lift/dynamics/density/climax/bloom` 用于高潮段落、连续副歌能量和歌词高光。
 
 ## MUST
 

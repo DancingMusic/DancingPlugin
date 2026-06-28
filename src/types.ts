@@ -92,6 +92,22 @@ export interface DanceRhythmFrame {
     energy: number;
     score: number;
   };
+  section: {
+    /** Smoothed section-level musical energy (0-1). */
+    energy: number;
+    /** Smoothed section low-frequency drive (0-1). */
+    low: number;
+    /** Relative lift above the current song baseline (0-1). */
+    lift: number;
+    /** Combined section/camera dynamics scale. 1 is neutral. */
+    dynamics: number;
+    /** Running rhythmic density estimate (0-1). */
+    density: number;
+    /** Sustained climax drive for choruses and high-energy passages (0-1). */
+    climax: number;
+    /** Sustained high-frequency/vocal bloom for lyric glow (0-1). */
+    bloom: number;
+  };
   beat: DanceBeatFrame;
   pulse: number;
   bass: number;
