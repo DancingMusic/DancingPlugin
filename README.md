@@ -5,7 +5,7 @@ TypeScript SDK for building [DancingMusic](https://github.com/DancingMusic/Danci
 ## Installation
 
 ```bash
-npm install @dancingmusic/plugin-sdk
+npm install github:DancingMusic/DancingPlugin#100f70248f960df5315a68d7e0c412033f339c3e
 ```
 
 ## Quick Start

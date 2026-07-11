@@ -5,7 +5,7 @@
  * Copy this file as your starting point and modify the render() method.
  *
  * To distribute:
- *   1. npm install @dancingmusic/plugin-sdk
+ *   1. npm install github:DancingMusic/DancingPlugin#100f70248f960df5315a68d7e0c412033f339c3e
  *   2. Build with Vite lib mode (formats: ['es'], self-contained bundle)
  *   3. Host the bundle at a CORS-accessible URL
  *   4. Submit the URL to the MusicDance plugin registry
