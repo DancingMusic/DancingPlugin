@@ -14,7 +14,9 @@
 - 包名：`@dancingmusic/plugin-sdk`
 - 版本：`v1.1.0`
 - 核心导出：`DancePlugin`（接口）、`AudioData` / `DanceRhythmFrame`（类型）、`createEmptyAudioData`（辅助函数）
-- 文档站：`docs/index.html`（支持 i18n 中英切换、客户端搜索、暗色模式）
+- 长文档由 `DancingMusic/docs` 统一维护并发布到
+  `https://dancingmusic.github.io/docs/plugins/sdk`；本仓 `docs/index.html`
+  只保留旧 Pages 地址的兼容跳转。
 - 示例插件：`src/example/`
 
 ## 核心接口
@@ -168,7 +170,7 @@ interface AudioData {
 - 独立可构建：`npm run build` 无需宿主环境。
 - 插件类型与生命周期契约在 SemVer 下保持向后兼容。
 - 公开导出集中在 `src/index.ts`。
-- 维护文档站 `docs/index.html`。
+- 维护协议 README，并把长文档变更同步到统一 docs；旧 Pages 仅保留跳转。
 
 ## MUST NOT
 

@@ -106,5 +106,5 @@ MIT
 
 This repository publishes a responsibility overview page from `docs/` via GitHub Actions.
 
-- Expected URL: `https://dancingmusic.github.io/DancingPluginSdk/`
+- Unified documentation: `https://dancingmusic.github.io/docs/plugins/sdk`
 - Workflow: `.github/workflows/deploy-pages.yml`
